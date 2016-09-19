@@ -1,7 +1,7 @@
 # starter-node-bot
 
 ## Overview
-A simple starting point for creating a Beep Boop hostable, Node.js based Slack bot with botkit
+A simple starting point for creating a Beep Boop hostable, Node.js based Slack bot with Slapp!
 
 Visit [Beep Boop](https://beepboophq.com/docs/article/overview) to get the scoop on the the Beep Boop hosting platform. The Slack API documentation can be found [here](https://api.slack.com/).
 
@@ -11,28 +11,12 @@ Visit [Beep Boop](https://beepboophq.com/docs/article/overview) to get the scoop
 
 ## Usage
 
-### Run locally
-	npm install
-	SLACK_TOKEN=<YOUR_SLACK_TOKEN> npm start
+Try it yourself!
 
-Things are looking good if the console prints something like:
+<a href='https://beepboophq.com/api/slack/auth/add-to-slack/90644ec769634755806c2f06c67b5b86'><img alt='Add to Slack' height='40' width='139' src='https://platform.slack-edge.com/img/add_to_slack.png' srcset='https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x' /></a>
 
-    ** API CALL: https://slack.com/api/rtm.start
-    ** BOT ID:  witty  ...attempting to connect to RTM!
-    ** API CALL: https://slack.com/api/chat.postMessage
 
-### Run locally in Docker
-	docker build -t starter-node .`
-	docker run --rm -it -e SLACK_TOKEN=<YOUR SLACK API TOKEN> starter-node
+# License
+MIT Copyright (c) 2016 Beep Boop, Robots & Pencils
 
-### Run in BeepBoop
-If you have linked your local repo with the Beep Boop service (check [here](https://beepboophq.com/0_o/my-projects)), changes pushed to the remote master branch will automatically deploy.
-
-## Acknowledgements
-
-This code uses the [botkit](https://github.com/howdyai/botkit) npm module by the fine folks at Howdy.ai.
-
-## License
-
-See the [LICENSE](LICENSE.md) file (MIT).
 
