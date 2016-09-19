@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/beepboophq/node-slack-bot.git"
+    "url": "git+https://github.com/tschumaker/starter-node-bot.git"
   },
   "keywords": [
     "slackbot",
     "bot",
     "slack"
   ],
-  "author": "BeepBoop Inc.",
+  "author": "BeepBoop...",
   "license": "MIT",
   "homepage": "https://github.com/beepboophq/node-slack-bot#readme",
   "dependencies": {
