@@ -68,19 +68,19 @@ slapp.message('you are awesome', ['mention', 'direct_message'], (msg) => {
 
 // demonstrate returning an attachment...
 slapp.message('attachment', ['mention', 'direct_message'], (msg) => {
-  var text = 'Slapp is a robust open source library that sits on top of Slack APIs'
-  var attachments = {
-    fallback: text,
-    pretext: 'Slapp is a node.js module for creating Slack integrations from simple slash commands to complex bots.',
-    title: 'Build your bot in minutes.',
-    image_url: 'https://storage.googleapis.com/beepboophq/_assets/bot-1.22f6fb.png',
-    title_link: 'https://beepboophq.com/',
-    text: text,
-    color: '#7CD197'
-  }
-  msg.say(attachments)
+  msg.say({
+    text: ' ',
+      attachments: [
+        {
+          text: 'Slapp is a robust open source library that sits on top of the Slack APIs',
+          fallback: '',
+	  title: 'Slapp Library - Open Source',
+          image_url: 'https://storage.googleapis.com/beepboophq/_assets/bot-1.22f6fb.png',
+          title_link: 'https://beepboophq.com/',
+          color: '#7CD197'	  
+        }]
+  })
 })
-
 
 // response to any GENERAL message (not handled above)...so you have to put your messages in ORDER from top-down...this is catch all!
 slapp.message('.*', ['direct_mention', 'direct_message'], (msg) => {
